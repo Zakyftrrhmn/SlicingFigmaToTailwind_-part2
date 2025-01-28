@@ -12,14 +12,14 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-body">
     <!-- Navbar -->
     <nav class="lg:px-[135px] md:px-10 px-8 bg py-6">
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-[72px]">
           <img src="/src/assets/img/1.logo-navbar.svg" alt="" />
           <ul
-            class="hidden md:block absolute left-0 top-20 flex flex-col md:flex md:relative md:flex-row md:left-0 md:top-0 gap-2 md:gap-6 w-full py-4 *:hover:bg-blue-200 md:*:hover:bg-transparent *:rounded-full md:*:rounded-none *:text-text-ul font-medium *:px-8 *:py-2 md:*:px-0 shadow-xl md:shadow-none z-10 toogleListMenu md:text-base *:transition-all *:ease-in-out *:duration-300"
+            class="hidden md:block absolute left-0 top-20 flex flex-col md:flex md:relative md:flex-row md:left-0 md:top-0 gap-2 md:gap-6 w-full py-4 *:hover:bg-blue-200 md:*:hover:bg-transparent *:rounded-full md:*:rounded-none *:text-text-ul font-medium *:px-8 *:py-2 md:*:px-0 shadow-xl md:shadow-none z-50 toogleListMenu md:text-sm *:transition-all *:ease-in-out *:duration-300 md:*:hover:text-primary bg-body md:bg-transparent rounded-b-xl"
           >
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
@@ -46,6 +46,64 @@
       </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="lg:px-[135px] md:px-10 px-8 bg py-6">
+      <div class="grid grid-cols-12 gap-10 items-center">
+        <div class="col-span-12 md:col-span-6 flex flex-col gap-4">
+          <h1
+            class="text-6xl md:text-7xl font-bold leading-16 md:leading-20 text-text-primary"
+          >
+            Discover the Best Lovely Places
+          </h1>
+          <p class="text-text-secondary text-sm md:text-base">
+            Plan and book your perfect trip with expert advice, travel tips,
+            destination information and inspiration from us.
+          </p>
+          <div
+            class="flex gap-4 mt-5 bg-white shadow-sm items-center rounded-full py-3 px-5 justify-between"
+          >
+            <div class="flex flex-col">
+              <h5 class="text-base font-bold text-text-primary md:text-lg">
+                Where
+              </h5>
+              <div class="flex gap-2 items-center">
+                <span
+                  class="text-text-secondary text-xs md:text-sm truncate w-24"
+                >
+                  Jl. Maharaja Indra No.28312, Pangkalan Kerinci Kota, Kec.
+                  Pangkalan Kerinci, Kabupaten Pelalawan, Riau 28654</span
+                >
+                <img src="/src/assets/img/2.location-icon.svg" alt="" />
+              </div>
+            </div>
+            <div class="bg-gray-400 w-2 h-full rounded-full opacity-30"></div>
+            <div class="flex flex-col">
+              <h5 class="text-base font-bold text-text-primary md:text-lg">
+                Date
+              </h5>
+              <div class="flex gap-2 items-center">
+                <span
+                  class="text-text-secondary text-xs truncate w-24 md:text-sm"
+                >
+                  09th March,2021</span
+                >
+                <img src="/src/assets/img/2.date-icon.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-center p-2 bg-primary rounded-full cursor-pointer hover:bg-text-secondary transition-all ease-in-out duration-300"
+            >
+              <i class="bx bx-search-alt-2 text-3xl text-white"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6">
+          <img src="/src/assets/img/2.hero-section.svg" class="w-full" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Script Menu -->
     <script>
       const ToogleMenu = document.querySelector(".toogleMenu");
       const ToogleListMenu = document.querySelector(".toogleListMenu");
