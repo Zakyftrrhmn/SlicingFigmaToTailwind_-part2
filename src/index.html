@@ -3,8 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travel UI Landing Page (Community)</title>
+    <!-- Style CSS -->
     <link rel="stylesheet" href="../dist/output.css" class="href" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <nav class="lg:px-[135px] md:px-10 px-8 bg py-6">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-[72px]">
+          <img src="/src/assets/img/1.logo-navbar.svg" alt="" />
+          <ul
+            class="hidden md:block absolute left-0 top-20 flex flex-col md:flex md:relative md:flex-row md:left-0 md:top-0 gap-2 md:gap-6 w-full py-4 *:hover:bg-blue-200 md:*:hover:bg-transparent *:rounded-full md:*:rounded-none *:text-text-ul font-medium *:px-8 *:py-2 md:*:px-0 shadow-xl md:shadow-none z-10 toogleListMenu md:text-base *:transition-all *:ease-in-out *:duration-300"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-2">
+          <button
+            class="flex items-center gap-1 text-base text-primary outline-1 px-8 py-2 rounded-full cursor-pointer hover:outline-0 hover:bg-primary hover:text-white transition-all ease-in-out duration-300"
+          >
+            Book Now
+            <i class="bx bxl-telegram"></i>
+          </button>
+          <button class="toogleMenu md:hidden">
+            <img
+              src="/src/assets/img/1.hamburger-navbar.svg"
+              class="w-10"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const ToogleMenu = document.querySelector(".toogleMenu");
+      const ToogleListMenu = document.querySelector(".toogleListMenu");
+
+      ToogleMenu.addEventListener("click", () => {
+        ToogleListMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
